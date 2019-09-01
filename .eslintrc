@@ -1,0 +1,12 @@
+{
+  "extends": "equimper",
+  "rules": {
+    "arrow-body-style": "off",
+    "camelcase": "off",
+    "react/no-array-index-key": "warn",
+    "no-nested-ternary": "off",
+    "react/jsx-wrap-multilines": "off",
+    "max-len": "off",
+    "no-param-reassign": 0
+  }
+}

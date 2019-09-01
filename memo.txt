@@ -1,0 +1,10 @@
+カメラロールへのパーミッションが変わった。
+$ expo install expo-permissions
+
+import {Permissions} from 'expo'　から
+import * as Permissions from 'expo-permissions';
+に変更
+
+expo install expo-image-picker
+
+import * as ImageManipulator from 'expo-image-manipulator';

@@ -1,0 +1,31 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "^34.0.1",
+    "expo-image-manipulator": "^6.0.0",
+    "expo-image-picker": "^6.0.0",
+    "expo-permissions": "^6.0.0",
+    "firebase": "^6.4.0",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "react-native-elements": "^1.1.0",
+    "react-native-modal": "^11.3.1",
+    "react-native-textinput-effects": "^0.5.1",
+    "react-native-web": "^0.11.4"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^6.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-equimper": "^2.2.2",
+    "prettier": "^1.18.2"
+  },
+  "private": true
+}
