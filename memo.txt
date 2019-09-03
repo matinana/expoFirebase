@@ -1,7 +1,7 @@
 カメラロールへのパーミッションが変わった。
 $ expo install expo-permissions
 
-import {Permissions} from 'expo'　から
+import { Permissions } from 'expo'　から
 import * as Permissions from 'expo-permissions';
 に変更
 

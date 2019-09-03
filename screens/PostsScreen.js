@@ -12,6 +12,9 @@ import Fire from '../utils/Fire';
 import Post from '../components/Post';
 import AddPostModal from '../components/AddPostModal';
 
+const deviceWidth = Dimensions.get('window').width;
+const deviceHeight = Dimensions.get('window').height;
+
 class PostsScreen extends React.Component {
   constructor(props) {
     super(props);
@@ -46,10 +49,9 @@ class PostsScreen extends React.Component {
   }
 
   render() {
-    const deviceWidth = Dimensions.get('window').width;
-    const deviceHeight = Dimensions.get('window').height;
     return (
       <View style={styles.container}>
+        {/* 写真登録 */}
         <Button
           containerStyle={styles.addPostBtnContainer}
           buttonStyle={styles.addPostBtn}
@@ -84,7 +86,6 @@ class PostsScreen extends React.Component {
   }
 }
 
-const deviceHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',

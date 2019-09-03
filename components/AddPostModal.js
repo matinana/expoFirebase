@@ -17,7 +17,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import firebase from 'firebase';
 import Fire from '../utils/Fire';
 
-class AddFriendModal extends React.Component {
+class AddPostModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -204,4 +204,4 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
 });
-export default AddFriendModal;
+export default AddPostModal;
