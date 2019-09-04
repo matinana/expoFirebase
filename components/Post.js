@@ -18,7 +18,7 @@ class Post extends React.Component {
         data={[...this.props.allPosts].sort(
           (a, b) => b.postIndex - a.postIndex,
         )}
-        keyExtractor={item => item.phrase}
+        keyExtractor={item => item.postIndex}
         renderItem={this.renderPost}
       />
     );

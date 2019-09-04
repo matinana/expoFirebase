@@ -76,7 +76,6 @@ class PostsScreen extends React.Component {
             <AddPostModal
               updateAddedPostState={this.updateAddedPostState}
               togglePostModal={this.togglePostModal}
-              postIndex={this.state.allPosts.length}
             />
           </KeyboardAvoidingView>
         </Modal>

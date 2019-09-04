@@ -29,8 +29,7 @@ class AddPostModal extends React.Component {
 
   async onPressAdd() {
     await this.uploadPostImg();
-    const { imgUrl, phrase } = await this.state;
-    const postIndex = this.props.postIndex;
+    const { imgUrl, phrase, postIndex } = await this.state;
 
     this.uploadPost(imgUrl, phrase, postIndex);
 
@@ -84,12 +83,12 @@ class AddPostModal extends React.Component {
     const metadata = {
       contentType: 'image/jpeg',
     };
-    const phrase = this.state.phrase;
+    const postIndex = Date.now().toString();
     const storage = firebase.storage();
     const imgURI = this.state.imgUrl;
     const response = await fetch(imgURI);
     const blob = await response.blob();
-    const uploadRef = storage.ref('images').child(`${phrase}`);
+    const uploadRef = storage.ref('images').child(`${postIndex}`);
 
     // storageにダウンロードURLを保存
     await uploadRef.put(blob, metadata).catch(() => {
@@ -102,6 +101,7 @@ class AddPostModal extends React.Component {
       .then(url => {
         this.setState({
           imgUrl: url,
+          postIndex,
         });
       })
       .catch(() => {

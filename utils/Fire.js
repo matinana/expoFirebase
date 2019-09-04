@@ -13,7 +13,7 @@ class Fire {
   }
 
   uploadPost = async ({ url, phrase, postIndex }) => {
-    const uploadRef = await this.postCollection.doc(phrase);
+    const uploadRef = await this.postCollection.doc(postIndex);
     uploadRef
       .set({
         imgUrl: url,
